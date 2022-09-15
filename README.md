@@ -208,7 +208,7 @@ See `platforms>ios>CordovaApp>Classes>AppDelegate.m`
 Update both "Entitlements-Debug.plist" and "Entitlements-Release.plist"
 You must set the `com.apple.developer.associated-domains` to the domain configured in Singular's Manage Domains. Your value should be something like: "YOURCUSTOMDOMAIN.sng.link" see below:
 
-```plist
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
