@@ -1,0 +1,18 @@
+PODS:
+  - Singular-SDK (11.0.9):
+    - Singular-SDK/Main (= 11.0.9)
+  - Singular-SDK/Main (11.0.9)
+
+DEPENDENCIES:
+  - Singular-SDK (~> 11.0.9)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Singular-SDK
+
+SPEC CHECKSUMS:
+  Singular-SDK: 32548a996b7c3de01c959c20eb292a2c0f5fca81
+
+PODFILE CHECKSUM: f5e80ee7f795e3f32bedcaa137ef5e70488f3336
+
+COCOAPODS: 1.11.3

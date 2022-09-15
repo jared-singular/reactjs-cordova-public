@@ -1,0 +1,21 @@
+{
+    "declarations": {
+        "use_frameworks!": {
+            "declaration": "use_frameworks!",
+            "count": 1
+        }
+    },
+    "sources": {
+        "https://github.com/CocoaPods/Specs.git": {
+            "source": "https://github.com/CocoaPods/Specs.git",
+            "count": 1
+        }
+    },
+    "libraries": {
+        "Singular-SDK": {
+            "name": "Singular-SDK",
+            "spec": "~> 11.0.9",
+            "count": 1
+        }
+    }
+}

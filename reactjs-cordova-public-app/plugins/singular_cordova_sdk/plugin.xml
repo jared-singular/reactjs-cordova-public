@@ -1,0 +1,55 @@
+<plugin id="singular_cordova_sdk" version="1.0.0"
+	xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>SingularCordovaSdk</name>
+	<js-module name="SingularCordovaSdk" src="www/SingularCordovaSdk.js">
+		<clobbers target="cordova.plugins.SingularCordovaSdk" />
+	</js-module>
+    <js-module name="SingularConfig" src="www/SingularConfig.js">
+		<clobbers target="cordova.plugins.SingularCordovaSdk.SingularConfig" />
+	</js-module>
+	<js-module name="SingularIAP" src="www/SingularIAP.js">
+		<clobbers target="cordova.plugins.SingularCordovaSdk.SingularIAP" />
+	</js-module>
+	<js-module name="SingularAdData" src="www/SingularAdData.js">
+		<clobbers target="cordova.plugins.SingularCordovaSdk.SingularAdData" />
+	</js-module>
+	<js-module name="Events" src="www/Events.js">
+		<clobbers target="cordova.plugins.SingularCordovaSdk.Events" />
+	</js-module>
+	<js-module name="Attributes" src="www/Attributes.js">
+		<clobbers target="cordova.plugins.SingularCordovaSdk.Attributes" />
+	</js-module>
+	<platform name="ios">
+        <podspec>
+            <config>
+                <source url="https://github.com/CocoaPods/Specs.git"/>
+            </config>
+            <pods use-frameworks="true">
+                <pod name="Singular-SDK" spec="~> 11.0.9" />
+            </pods>
+        </podspec>
+		<config-file parent="/*" target="config.xml">
+			<feature name="SingularCordovaSdk">
+				<param name="ios-package" value="SingularCordovaSdk" />
+				<param name="onload" value="true" />
+			</feature>
+		</config-file>
+		<header-file src="src/ios/SingularCordovaSdk.h" />
+		<source-file src="src/ios/SingularCordovaSdk.m" />
+	</platform>
+	<platform name="android">
+        <framework custom="true" src="src/android/singular_cordova_sdk.gradle" type="gradleReference" />
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="SingularCordovaSdk">
+				<param name="android-package" value="singular_cordova_sdk.SingularCordovaSdk" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+			<uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+			<uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+        </config-file>
+		<source-file src="src/android/SingularCordovaSdk.java" target-dir="src/singular_cordova_sdk/SingularCordovaSdk" />
+	</platform>
+</plugin>

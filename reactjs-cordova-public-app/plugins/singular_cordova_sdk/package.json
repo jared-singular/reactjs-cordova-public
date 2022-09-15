@@ -1,0 +1,30 @@
+{
+  "name": "singular_cordova_sdk",
+  "version": "1.0.0",
+  "description": "Singular Cordova SDK",
+  "cordova": {
+    "id": "singular_cordova_sdk",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/singular-labs/Singular-Cordova-SDK.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "Singular Labs",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/singular-labs/Singular-Cordova-SDK/blob/master/LICENSE"
+  },
+  "bugs": {
+    "url": "https://github.com/singular-labs/Singular-Cordova-SDK/issues"
+  },
+  "homepage": "https://github.com/singular-labs/Singular-Cordova-SDK#readme"
+}
